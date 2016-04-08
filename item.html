@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div id="tplItem">
+        <div class="row" style="float:left;">
+            <h2>{{title}}</h2>
+            <iframe width="520" height="360" src="https://www.youtube.com/embed/{{videoid}}" frameborder="0"></iframe>
+        </div>
+        <div class="row" style="float: right;">
+            <h2>Channel Title: {{channeltitle}}</h2>
+            <p>Channel Id: {{channelid}}</p>
+            <span>
+                <a href="#" onclick="addToFavorites('{{videoid}}')">+</a>
+                <a href="#" onclick="removeFromFavorites('{{videoid}}')">-</a>
+            </span>
+            <div>
+                <a href="#" id="details" onclick="getDetails('{{videoid}}')">View Details</a>      
+            </div>
+        </div>
+    </div>
+</body>
+</html>
