@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div id="tplItem">
+        <div class="row" style="float:left;">
+            <h2>{{title}}</h2>
+            <iframe width="520" height="360" src="https://www.youtube.com/embed/{{videoid}}" frameborder="0"></iframe>
+        </div>
+        <div class="row" style="float: right;">
+            <h2>Channel Title: {{channeltitle}}</h2>
+            <p>Channel Id: {{channelid}}</p>
+            <span>
+                <a href="https://accounts.google.com/o/oauth2/auth?client_id=589676684899-p08f2re4409ea4tib8lttrfnphuf9gqm.apps.googleusercontent.com&amp;redirect_uri=http%3A%2F%2Flocalhost:64553%2F&amp;scope=https://www.googleapis.com/auth/youtube&amp;response_type=code&amp;access_type=offline" onclick="addToFavorites('{{videoid}}')">+</a>
+                <a href="https://accounts.google.com/o/oauth2/auth?client_id=589676684899-p08f2re4409ea4tib8lttrfnphuf9gqm.apps.googleusercontent.com&amp;redirect_uri=http%3A%2F%2Flocalhost:64553%2F&amp;scope=https://www.googleapis.com/auth/youtube&amp;response_type=code&amp;access_type=offline" onclick="removeFromFavorites('{{videoid}}')">-</a>
+            </span>
+            <div>
+                <a href="#" id="details" onclick="getDetails('{{videoid}}')">View Details</a>      
+            </div>
+        </div>
+    </div>
+</body>
+</html>
